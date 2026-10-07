@@ -12,17 +12,21 @@ public class CurrencyService {
 
         Double gelenTl = request.getTlMiktar();
 
-
+        // double altın eklendi
+        Double altınKuru = 6.506;
         Double dolarKuru = 49.14;
         Double euroKuru = 55.37;
 
+
+        Double hesaplananAltın = gelenTl / altınKuru;
         Double hesaplananDolar = gelenTl / dolarKuru;
         Double hesaplananEuro = gelenTl / euroKuru;
 
 
         DovizResponse sonuc = new DovizResponse();
 
-
+        // sonuc. altın eklendi
+        sonuc.setAltınMiktar(hesaplananAltın);
         sonuc.setTlMiktar(gelenTl);
         sonuc.setDolarMiktar(hesaplananDolar);
         sonuc.setEuroMiktar(hesaplananEuro);
