@@ -11,3 +11,5 @@ public class DovizuygulamasiApplication {
 	}
 
 }
+
+// http://localhost:8080/home/cevir
