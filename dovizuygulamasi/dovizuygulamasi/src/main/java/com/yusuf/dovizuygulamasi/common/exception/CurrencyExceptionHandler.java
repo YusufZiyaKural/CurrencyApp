@@ -17,5 +17,4 @@ public class CurrencyExceptionHandler {
                     .badRequest()
                     .body("Miktar sayısal bir değer olmalıdır.");
         }
-
 }
