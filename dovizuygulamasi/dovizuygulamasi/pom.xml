@@ -29,6 +29,9 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+
+	<!-- Dependencies Beginning -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,12 +49,23 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Junit5 -->
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-junit5</artifactId>
+			<version>3.39.2</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+	<!-- Dependencies Ending -->
+
 
 	<build>
 		<plugins>

@@ -5,7 +5,7 @@ import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-//Kalıp Exception Handler (Ai ile oku)
+//Kalıp Exception Handler
 @RestControllerAdvice
 public class CurrencyExceptionHandler {
 
@@ -17,5 +17,4 @@ public class CurrencyExceptionHandler {
                     .badRequest()
                     .body("Miktar sayısal bir değer olmalıdır.");
         }
-
 }
