@@ -25,7 +25,7 @@ public class CurrencyService {
 
         DovizResponse sonuc = new DovizResponse();
 
-        // sonuc. altın eklendi
+        // sonuc.altın eklendi
         sonuc.setAltınMiktar(hesaplananAltın);
         sonuc.setTlMiktar(gelenTl);
         sonuc.setDolarMiktar(hesaplananDolar);

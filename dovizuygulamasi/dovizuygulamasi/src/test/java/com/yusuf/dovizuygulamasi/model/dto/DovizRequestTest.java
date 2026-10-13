@@ -10,12 +10,12 @@ public class DovizRequestTest {
 
     @Test
     public void dovizTltest(){
-        DovizRequest request = new DovizRequest(); //  1) Obje oluşturma
+        DovizRequest request = new DovizRequest(); //  1) Obje oluşturma (Arrange)
 
 
-        request.setTlMiktar(1500.0); // 2) girilen değer
+        request.setTlMiktar(1500.0); // 2) girilen değer (Act)
 
-        assertEquals(1500.0, request.getTlMiktar()); // 3) çıkması beklenen değer ve gerçekten dönen response verisinin çekilmesi
+        assertEquals(1500.0, request.getTlMiktar()); // 3) çıkması beklenen değer ve gerçekten dönen response verisinin çekilmesi (Assert)
 
 
     }
